@@ -9,7 +9,11 @@ export function ColorModeToggle() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <Button aria-label="toggle color mode" onClick={toggleColorMode}>
+    <Button
+      aria-label="toggle color mode"
+      onClick={toggleColorMode}
+      bg={{ base: "gray.200", _dark: "gray.800" }}
+    >
       {theme === "light" ? <IoMdMoon /> : <FaSun />}
     </Button>
   );

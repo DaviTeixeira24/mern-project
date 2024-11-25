@@ -18,19 +18,18 @@ export const NavBar = () => {
         <Text
           bgGradient="to-r"
           gradientFrom="yellow.300"
-          gradientTo="yellow.600"
+          gradientTo="yellow.500"
           bgClip="text"
-          fontSize={{ base: "4xl", sm: "5xl" }}
+          fontSize="2rem"
           fontWeight="extrabold"
           textTransform={"uppercase"}
-          textAlign={"center"}
         >
           <Link to={"/"}>Tudaqui Store 🛒</Link>
         </Text>
 
-        <HStack spacing={2} alignItems={"center"}>
-          <Link to={"create"}>
-            <Button bg="yellow.300">
+        <HStack gap={2} alignItems={"center"}>
+          <Link to={"/create"}>
+            <Button bg={{ base: "gray.200", _dark: "gray.800" }}>
               <FaPlusSquare fontSize={20} />
             </Button>
           </Link>
