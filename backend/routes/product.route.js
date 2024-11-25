@@ -14,3 +14,4 @@ router.put("/:id", updateProduct);
 router.delete("/:id", deleteProduct); //":" na URL sigiifica que qualquer id poderá ser inserido
 
 export default router;
+cdd;
